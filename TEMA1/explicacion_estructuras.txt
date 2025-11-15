@@ -1,0 +1,76 @@
+EXPLICACIÓN DE LAS ESTRUCTURAS UTILIZADAS EN EL SISTEMA
+--------------------------------------------------------
+
+Este sistema implementa la administración básica de usuarios, productos y ventas.
+Para ello se definieron tres estructuras principales: Usuario, Producto y Venta.
+Cada una permite organizar mejor los datos y acceder a ellos de forma ordenada.
+
+1. ESTRUCTURA USUARIO
+----------------------
+
+La estructura Usuario se utiliza para almacenar la información de cada usuario 
+registrado en el sistema. Cada usuario contiene:
+
+- id: número entero que identifica de forma única al usuario.
+- nombre: cadena de caracteres que almacena el nombre del usuario.
+- correo: cadena con el correo electrónico del usuario.
+- tipo: número entero que representa el tipo de usuario 
+        (por ejemplo: 1 = cliente, 2 = vendedor, etc.)
+
+Esta estructura permite manejar listas de usuarios y realizar búsquedas, listados
+y registros nuevos en el sistema.
+
+
+2. ESTRUCTURA PRODUCTO
+-----------------------
+
+La estructura Producto representa cada producto disponible. Incluye:
+
+- id: número entero que identifica al producto.
+- nombre: cadena con el nombre del producto.
+- precio: valor flotante que representa el precio unitario.
+- stock: número entero que indica cuántas unidades hay disponibles.
+
+Con esta estructura se pueden registrar productos, listarlos, actualizar stock 
+y realizar búsquedas.
+
+
+3. ESTRUCTURA VENTA
+--------------------
+
+La estructura Venta almacena los datos necesarios para registrar una compra. 
+Incluye:
+
+- idVenta: identificador único de la venta.
+- idUsuario: referencia al usuario que realizó la compra.
+- idProducto: referencia al producto comprado.
+- cantidad: cantidad de unidades que el usuario compró.
+- total: valor total calculado de la venta.
+
+Gracias a esta estructura el sistema puede llevar un historial de ventas y 
+relacionarlas con usuarios y productos.
+
+
+4. JUSTIFICACIÓN DEL USO DE ESTRUCTURAS
+----------------------------------------
+
+El uso de estructuras permite:
+
+- Agrupar datos relacionados en una sola entidad lógica.
+- Evitar el uso de múltiples variables sueltas.
+- Facilitar el manejo de arreglos o listas de usuarios, productos y ventas.
+- Hacer el código más claro, organizado y modular.
+- Mejorar la lectura y el mantenimiento del programa.
+
+Sin estas estructuras, el sistema sería más complicado de entender y manejar,
+ya que habría que administrar muchos datos individuales sin orden.
+
+
+5. CONCLUSIÓN
+--------------
+
+Las estructuras Usuario, Producto y Venta permiten representar los elementos
+principales del sistema de manera clara y consistente. Cada una agrupa la 
+información necesaria para llevar registro ordenado de usuarios, productos 
+y ventas, facilitando así la implementación de todas las funcionalidades 
+del proyecto.
