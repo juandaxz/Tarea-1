@@ -1,0 +1,4 @@
+P001,Mouse USB,25,5.00,10.00
+P002,Teclado USB,15,8.50,18.00
+P003,Audifonos,10,7.00,15.00
+P004,Cargador,30,3.00,7.50
